@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
+import { Divider, Tab, Tabs, Typography } from "@mui/material";
 import AuthLayout from "@/components/auth/AuthLayout";
 import AuthSocialButtons from "@/components/auth/AuthSocialButtons";
 import LoginForm from "@/components/auth/LoginForm";
@@ -14,7 +14,7 @@ const LoginPage = () => {
     <AuthLayout>
       <Tabs
         value={tab}
-        onChange={(e, val) => setTab(val)}
+        onChange={(_e, val) => setTab(val)}
         textColor="primary"
         indicatorColor="primary"
         sx={{ mb: 3, borderBottom: "thin solid rgba(0, 0, 0, 0.12)" }}
