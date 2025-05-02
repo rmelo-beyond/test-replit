@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
+import { Divider, Tab, Tabs, Typography } from "@mui/material";
 import AuthLayout from "@/components/auth/AuthLayout";
 import AuthSocialButtons from "@/components/auth/AuthSocialButtons";
 import LoginForm from "@/components/auth/LoginForm";
@@ -15,6 +15,7 @@ const LoginPage = () => {
   const { data } = useGetPokemonByNameQuery("pikachu");
 
   console.log({ DATA: data });
+  console.log({ ENVTEST: process.env.NEXT_PUBLIC_TEST });
 
   return (
     <AuthLayout>
