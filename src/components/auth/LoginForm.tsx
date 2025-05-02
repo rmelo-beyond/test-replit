@@ -12,7 +12,8 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import BRInput from "@/components/mui/inputs/BRInput";
-import { useTranslation } from "@/translations/useTranslation";
+import { useTranslation } from "@/features/translations/useTranslation";
+
 interface LoginFormProps {
   onSwitchToSignUp: () => void;
 }

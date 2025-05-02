@@ -1,0 +1,27 @@
+import { TranslationDictionary } from './types';
+
+export const ptTranslations: TranslationDictionary = {
+  welcomeBack: "Bem-vindo de volta",
+  createAccount: "Crie uma conta",
+  orLogInWithEmail: "ou logue com email",
+  orSignInWithEmail: "ou cadastre-se com email",
+  email: "Email",
+  password: "Senha",
+  logIn: "ENTRAR",
+  signUp: "CADASTRAR",
+  alreadyHaveAnAccount: "Já tem uma conta?",
+  dontHaveAnAccount: "Não tem uma conta?",
+  hideThePassword: "Esconder a senha",
+  displayThePassword: "Exibir a senha",
+  rememberMe: "Lembrar-me",
+  forgotPassword: "ESQUECEU A SENHA?",
+  termsOfService: "Termos de Serviço",
+  privacyPolicy: "Política de Privacidade",
+  agreeTo: "Eu concordo com os",
+  and: "e",
+  emailPlaceholder: "Digite seu email",
+  passwordPlaceholder: "Digite sua senha",
+  continueWithGoogle: "Continuar com Google",
+  continueWithMicrosoft: "Continuar com Microsoft",
+  continueWithGithub: "Continuar com Github",
+}; 

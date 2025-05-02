@@ -1,5 +1,7 @@
-import React, { createContext, useState, useContext, ReactNode } from "react";
-import { Language } from "./dictionaries";
+import React, { createContext, useContext, ReactNode } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { setLanguage, selectLanguage } from '../store/languageSlice';
+import { Language } from "./languageMaps/types";
 
 interface LanguageContextType {
   language: Language;
@@ -11,10 +13,15 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en");
+  const dispatch = useDispatch();
+  const language = useSelector(selectLanguage);
+
+  const handleSetLanguage = (lang: Language) => {
+    dispatch(setLanguage(lang));
+  };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

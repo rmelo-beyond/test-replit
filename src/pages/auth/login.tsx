@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import { Divider, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
 import AuthLayout from "@/components/auth/AuthLayout";
 import AuthSocialButtons from "@/components/auth/AuthSocialButtons";
 import LoginForm from "@/components/auth/LoginForm";
 import SignUpForm from "@/components/auth/SignUpForm";
 import AuthTitle from "@/components/auth/AuthTitle";
-import { useTranslation } from "@/translations/useTranslation";
+import { useTranslation } from "@/features/translations/useTranslation";
 
 const LoginPage = () => {
   const [tab, setTab] = useState(0);
   const { getText } = useTranslation();
+
   return (
     <AuthLayout>
       <Tabs
         value={tab}
-        onChange={(_e, val) => setTab(val)}
+        onChange={(e, val) => setTab(val)}
         textColor="primary"
         indicatorColor="primary"
         sx={{ mb: 3, borderBottom: "thin solid rgba(0, 0, 0, 0.12)" }}

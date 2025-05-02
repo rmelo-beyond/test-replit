@@ -1,0 +1,27 @@
+import { TranslationDictionary } from './types';
+
+export const jaTranslations: TranslationDictionary = {
+  welcomeBack: "ようこそ",
+  createAccount: "アカウントを作成する",
+  orLogInWithEmail: "またはメールでログイン",
+  orSignInWithEmail: "またはメールでサインイン",
+  email: "メール",
+  password: "パスワード",
+  logIn: "ログイン",
+  signUp: "アカウントを作成する",
+  alreadyHaveAnAccount: "既にアカウントを持っていますか？",
+  dontHaveAnAccount: "アカウントを持っていませんか？",
+  hideThePassword: "パスワードを非表示にする",
+  displayThePassword: "パスワードを表示する",
+  rememberMe: "覚えておく",
+  forgotPassword: "パスワードを忘れた？",
+  termsOfService: "利用規約",
+  privacyPolicy: "プライバシーポリシー",
+  agreeTo: "同意します",
+  and: "と",
+  emailPlaceholder: "メールアドレスを入力してください",
+  passwordPlaceholder: "パスワードを入力してください",
+  continueWithGoogle: "Googleで続ける",
+  continueWithMicrosoft: "Microsoftで続ける",
+  continueWithGithub: "Githubで続ける",
+}; 

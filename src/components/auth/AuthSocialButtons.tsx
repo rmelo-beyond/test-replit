@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 import { Google, Microsoft, GitHub } from "@mui/icons-material";
-import { useTranslation } from "../../translations/useTranslation";
+import { useTranslation } from "../../features/translations/useTranslation";
+
 const AuthSocialButtons: React.FC = () => {
   const { getText } = useTranslation();
 
@@ -24,7 +25,7 @@ const AuthSocialButtons: React.FC = () => {
       >
         {getText("continueWithMicrosoft")}
       </Button>
-      
+
       <Button
         variant="outlined"
         startIcon={<GitHub />}

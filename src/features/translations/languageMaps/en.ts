@@ -1,0 +1,27 @@
+import { TranslationDictionary } from './types';
+
+export const enTranslations: TranslationDictionary = {
+  welcomeBack: "Welcome back",
+  createAccount: "Create an account",
+  orLogInWithEmail: "or log in with email",
+  orSignInWithEmail: "or sign in with email",
+  email: "Email",
+  password: "Password",
+  logIn: "LOG IN",
+  signUp: "SIGN UP",
+  alreadyHaveAnAccount: "Already have an account?",
+  dontHaveAnAccount: "Don't have an account?",
+  hideThePassword: "Hide the password",
+  displayThePassword: "Display the password",
+  rememberMe: "Remember me",
+  forgotPassword: "FORGOT PASSWORD?",
+  termsOfService: "Terms of Service",
+  privacyPolicy: "Privacy Policy",
+  agreeTo: "I agree to the",
+  and: "and",
+  emailPlaceholder: "Enter your email",
+  passwordPlaceholder: "Enter your password",
+  continueWithGoogle: "Continue with Google",
+  continueWithMicrosoft: "Continue with Microsoft",
+  continueWithGithub: "Continue with Github",
+}; 
