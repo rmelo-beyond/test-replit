@@ -6,10 +6,15 @@ import LoginForm from "@/components/auth/LoginForm";
 import SignUpForm from "@/components/auth/SignUpForm";
 import AuthTitle from "@/components/auth/AuthTitle";
 import { useTranslation } from "@/features/translations/useTranslation";
+import { useGetPokemonByNameQuery } from "@/features/api/api";
 
 const LoginPage = () => {
   const [tab, setTab] = useState(0);
   const { getText } = useTranslation();
+
+  const { data } = useGetPokemonByNameQuery("pikachu");
+
+  console.log({ DATA: data });
 
   return (
     <AuthLayout>
